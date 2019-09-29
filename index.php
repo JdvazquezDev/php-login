@@ -9,6 +9,9 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
+
+    <?php require 'partials/header.php' ?>
+    
     <h1>Please login or signUp</h1>
     <a href="login.php">Login</a> or
     <a href="signup.php">SignUp</a>
