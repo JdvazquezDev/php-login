@@ -14,7 +14,7 @@
        if ($stmt->execute()) {
            $message = 'Successfully created new user';
        }else {
-           $message = 'Error';
+           $message = 'Sorry there must have been an error creating your password';
        }
     }
 ?>
@@ -31,6 +31,11 @@
     
 <body>   
     <?php require 'partials/header.php' ?>
+
+    <?php if(!empty($message)): ?>
+        <p><?= $message ?></p>
+    <?php endif; ?>
+
     <h1>SignUp</h1>
     <span>or <a href="login.php">Login</a></span>
     
